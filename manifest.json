@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "2.0.0",
   "repository": "b-bhupendra/research-notebooks",
-  "updated_at": "2026-10-21T17:27:42.155517Z",
+  "updated_at": "2026-10-21T17:39:00Z",
   "cdn_base": "https://cdn.jsdelivr.net/gh/b-bhupendra/research-notebooks@main",
   "cdn_endpoints": {
     "jsdelivr": "https://cdn.jsdelivr.net/gh/b-bhupendra/research-notebooks@main",
@@ -55,37 +55,19 @@
       }
     },
     {
-      "slug": "spam-detection-classifier",
-      "title": "Spam Detection Classifier",
-      "course": "ml-foundations",
-      "platform": "Coursera / Stanford",
-      "instructor": "Andrew Ng",
-      "excerpt": "End-to-end spam SMS classification using Naive Bayes and Logistic Regression",
+      "slug": "eda-in-hospitality-domain",
+      "title": "EDA in Hospitality Domain",
+      "course": "eda-in-hospitality-domain",
+      "platform": "Codebasics",
+      "instructor": "Dhaval Patel",
+      "excerpt": "Exploratory data analysis and business metrics in the hospitality industry.",
       "tags": [
         "Python",
-        "Scikit-Learn",
-        "FastAPI"
+        "EDA",
+        "Pandas",
+        "Hospitality"
       ],
-      "reading_time_minutes": 1,
-      "date": "2026-10-21",
-      "bundle": {
-        "article": "spam-detection-classifier/article.md",
-        "notebook": "spam-detection-classifier/notebook.ipynb",
-        "architecture": "spam-detection-classifier/architecture.md",
-        "assets_dir": "spam-detection-classifier/assets/"
-      }
-    },
-    {
-      "slug": "eda-in-hospitality-domain",
-      "title": "Eda_In_Hospitality_Domain",
-      "course": "eda-in-hospitality-domain",
-      "platform": "codebasics",
-      "instructor": "Daval",
-      "excerpt": "To learn Exploratory data analysis",
-      "tags": [
-        "python + react"
-      ],
-      "reading_time_minutes": 1,
+      "reading_time_minutes": 3,
       "date": "2026-10-21",
       "bundle": {
         "article": "eda-in-hospitality-domain/article.md",
