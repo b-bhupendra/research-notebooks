@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "2.0.0",
   "repository": "b-bhupendra/research-notebooks",
-  "updated_at": "2026-10-21T17:00:00Z",
+  "updated_at": "2026-10-21T17:08:28.447715Z",
   "cdn_base": "https://cdn.jsdelivr.net/gh/b-bhupendra/research-notebooks@main",
   "cdn_endpoints": {
     "jsdelivr": "https://cdn.jsdelivr.net/gh/b-bhupendra/research-notebooks@main",
@@ -52,6 +52,27 @@
         "notebook": "data-pipelines/notebook.ipynb",
         "architecture": "data-pipelines/architecture.md",
         "assets_dir": "data-pipelines/assets/"
+      }
+    },
+    {
+      "slug": "spam-detection-classifier",
+      "title": "Spam Detection Classifier",
+      "course": "ml-foundations",
+      "platform": "Coursera / Stanford",
+      "instructor": "Andrew Ng",
+      "excerpt": "End-to-end spam SMS classification using Naive Bayes and Logistic Regression",
+      "tags": [
+        "Python",
+        "Scikit-Learn",
+        "FastAPI"
+      ],
+      "reading_time_minutes": 1,
+      "date": "2026-10-21",
+      "bundle": {
+        "article": "spam-detection-classifier/article.md",
+        "notebook": "spam-detection-classifier/notebook.ipynb",
+        "architecture": "spam-detection-classifier/architecture.md",
+        "assets_dir": "spam-detection-classifier/assets/"
       }
     }
   ]
