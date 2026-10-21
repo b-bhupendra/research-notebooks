@@ -8,15 +8,17 @@
 
 ```text
 research-notebooks/
-├── manifest.json              # ⚡ SINGLE-REQUEST INDEX: Slugs, titles, tags, dates, commit SHA
-├── posts/                     # Markdown technical articles (.md)
-│   ├── systems-architecture.md
-│   └── data-pipelines.md
-├── notebooks/                 # Interactive Jupyter Notebooks (.ipynb)
-│   ├── exploratory-analysis.ipynb
-│   └── predictive-modeling.ipynb
-└── assets/                    # Static charts, diagrams, datasets
-    └── architecture-diagram.svg
+├── manifest.json                  # ⚡ SINGLE-REQUEST INDEX: Project bundles, slugs, tags, dates, CDN URLs
+├── README.md                      # Architecture blueprint & CDN benchmarks
+├── .github/workflows/
+│   └── publish-notify.yml         # CDN purge & receiving-site webhook notification
+│
+├── <project-slug>/                # 📦 UNIFIED PROJECT BUNDLE (e.g. systems-architecture)
+│   ├── article.md                 # Technical blog post with frontmatter
+│   ├── architecture.md            # System design & component blueprints
+│   ├── notebook.ipynb             # Interactive Jupyter Notebook (.ipynb)
+│   └── assets/                    # Project-specific diagrams, SVGs & charts
+└── ...
 ```
 
 ---

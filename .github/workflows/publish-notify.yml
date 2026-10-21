@@ -1,0 +1,32 @@
+name: Purge CDN Cache & Notify Receiving Site
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'manifest.json'
+      - '**/article.md'
+      - '**/notebook.ipynb'
+      - '**/assets/**'
+
+jobs:
+  cdn-purge-and-notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Purge jsDelivr Manifest Cache
+        run: |
+          echo "Purging jsDelivr edge cache for manifest.json..."
+          curl -s -i "https://purge.jsdelivr.net/gh/${{ github.repository }}@main/manifest.json"
+
+      - name: Dispatch Webhook to Receiving Site (Optional)
+        if: env.BLOG_WEBHOOK_URL != ''
+        env:
+          BLOG_WEBHOOK_URL: ${{ secrets.BLOG_REVALIDATE_WEBHOOK_URL }}
+          BLOG_WEBHOOK_SECRET: ${{ secrets.BLOG_REVALIDATE_SECRET }}
+        run: |
+          echo "Notifying receiving blog frontend via webhook..."
+          curl -s -X POST "$BLOG_WEBHOOK_URL" \
+            -H "Content-Type: application/json" \
+            -H "Authorization: Bearer $BLOG_WEBHOOK_SECRET" \
+            -d '{"event":"publish","repository":"${{ github.repository }}","ref":"${{ github.ref }}","commit":"${{ github.sha }}"}'
