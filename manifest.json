@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "version": "2.0.0",
   "repository": "b-bhupendra/research-notebooks",
-  "updated_at": "2026-10-21T17:08:28.447715Z",
+  "updated_at": "2026-10-21T17:27:42.155517Z",
   "cdn_base": "https://cdn.jsdelivr.net/gh/b-bhupendra/research-notebooks@main",
   "cdn_endpoints": {
     "jsdelivr": "https://cdn.jsdelivr.net/gh/b-bhupendra/research-notebooks@main",
@@ -73,6 +73,25 @@
         "notebook": "spam-detection-classifier/notebook.ipynb",
         "architecture": "spam-detection-classifier/architecture.md",
         "assets_dir": "spam-detection-classifier/assets/"
+      }
+    },
+    {
+      "slug": "eda-in-hospitality-domain",
+      "title": "Eda_In_Hospitality_Domain",
+      "course": "eda-in-hospitality-domain",
+      "platform": "codebasics",
+      "instructor": "Daval",
+      "excerpt": "To learn Exploratory data analysis",
+      "tags": [
+        "python + react"
+      ],
+      "reading_time_minutes": 1,
+      "date": "2026-10-21",
+      "bundle": {
+        "article": "eda-in-hospitality-domain/article.md",
+        "notebook": null,
+        "architecture": "eda-in-hospitality-domain/architecture.md",
+        "assets_dir": "eda-in-hospitality-domain/assets/"
       }
     }
   ]
