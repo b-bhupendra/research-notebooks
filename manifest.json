@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "version": "1.0.0",
+  "repository": "b-bhupendra/research-notebooks",
+  "generated_at": "2026-10-21T11:15:00Z",
+  "default_cdn": "jsdelivr",
+  "cdn_endpoints": {
+    "jsdelivr": "https://cdn.jsdelivr.net/gh/b-bhupendra/research-notebooks@main",
+    "statically": "https://cdn.statically.io/gh/b-bhupendra/research-notebooks/main",
+    "github_raw": "https://raw.githubusercontent.com/b-bhupendra/research-notebooks/main"
+  },
+  "posts": [
+    {
+      "slug": "systems-architecture",
+      "title": "Modern Systems Architecture: Latency & CDN Resiliency",
+      "path": "posts/systems-architecture.md",
+      "excerpt": "Architectural principles for sub-25ms edge delivery, zero-rate-limit client architectures, and distributed caching strategies.",
+      "tags": ["Architecture", "CDN", "Edge", "Performance"],
+      "reading_time_minutes": 6,
+      "date": "2026-10-21",
+      "author": "Bhupendra"
+    },
+    {
+      "slug": "data-pipelines",
+      "title": "Fault-Tolerant Data Pipelines & Ingestion Patterns",
+      "path": "posts/data-pipelines.md",
+      "excerpt": "Designing resilient batch and streaming pipelines with backpressure handling, schema evolution, and deduplication.",
+      "tags": ["Data Engineering", "Pipelines", "ETL", "Kafka"],
+      "reading_time_minutes": 8,
+      "date": "2026-10-21",
+      "author": "Bhupendra"
+    }
+  ],
+  "notebooks": [
+    {
+      "slug": "exploratory-analysis",
+      "title": "Exploratory Data Analysis: High-Dimensional Signal Detection",
+      "path": "notebooks/exploratory-analysis.ipynb",
+      "summary": "Statistical distributions, correlation matrices, and automated outlier detection for feature engineering.",
+      "kernel": "python3",
+      "tags": ["EDA", "Pandas", "Visualization", "Statistics"],
+      "date": "2026-10-21"
+    },
+    {
+      "slug": "predictive-modeling",
+      "title": "Predictive Modeling: Gradient Boosting & Evaluation Metrics",
+      "path": "notebooks/predictive-modeling.ipynb",
+      "summary": "End-to-end model training, cross-validation, hyperparameter tuning, and ROC/PR curve benchmarking.",
+      "kernel": "python3",
+      "tags": ["Machine Learning", "Scikit-Learn", "XGBoost", "Model Evaluation"],
+      "date": "2026-10-21"
+    }
+  ],
+  "assets": [
+    {
+      "name": "architecture-diagram",
+      "type": "vector",
+      "path": "assets/architecture-diagram.svg",
+      "description": "Multi-tier CDN edge caching vs. GitHub raw origin architecture blueprint"
+    }
+  ]
+}
